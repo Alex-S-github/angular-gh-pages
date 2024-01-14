@@ -11,6 +11,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'gh-pages';
+  // ng build --output-path docs --base-href /angular-gh-pages/
 
   navigate(): void {
     console.log('AppComponent ~ navigate ~ navigate:');
