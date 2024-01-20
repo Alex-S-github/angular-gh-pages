@@ -1,14 +1,16 @@
 <h1>Hello Deploy</h1>
 <div class="content">Git Hub</div>
 
-<button routerLink="/users" routerLinkActive="active">users</button>
-<button routerLink="/documents" routerLinkActive="active">documents</button>
-<nav>
-  <h4>users</h4>
-  <a routerLink="/users" routerLinkActive="active">users </a>
-  <br />
-  <h4>documents</h4>
-  <a routerLink="/documents" routerLinkActive="active">documents </a>
-  <br />
-</nav>
-<router-outlet></router-outlet>
+<button (click)="nav('/users')">users</button>
+<button (click)="nav('/documents')">documents</button>
+<div style="display: flex; gap: 20px">
+  <nav>
+    <h4>users</h4>
+    <a routerLink="/users" routerLinkActive="active">users </a>
+    <br />
+    <h4>documents</h4>
+    <a routerLink="/documents" routerLinkActive="active">documents </a>
+    <br />
+  </nav>
+  <router-outlet></router-outlet>
+</div>
